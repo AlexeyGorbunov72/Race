@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CAF6F870253B6B5400BFB507 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F86F253B6B5400BFB507 /* main.swift */; };
+		CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F877253B6B7600BFB507 /* RaceMachine.swift */; };
+		CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */; };
+		CAF6F87E253B6BB700BFB507 /* AirRaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		CAF6F86C253B6B5400BFB507 /* Race */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Race; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF6F86F253B6B5400BFB507 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CAF6F877253B6B7600BFB507 /* RaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMachine.swift; sourceTree = "<group>"; };
+		CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundRaceMachine.swift; sourceTree = "<group>"; };
+		CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirRaceMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,28 @@
 		CAF6F86E253B6B5400BFB507 /* Race */ = {
 			isa = PBXGroup;
 			children = (
+				CAF6F881253B6E3500BFB507 /* AirMachines */,
+				CAF6F880253B6E2300BFB507 /* GroundMachines */,
 				CAF6F86F253B6B5400BFB507 /* main.swift */,
+				CAF6F877253B6B7600BFB507 /* RaceMachine.swift */,
+				CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */,
+				CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */,
 			);
 			path = Race;
+			sourceTree = "<group>";
+		};
+		CAF6F880253B6E2300BFB507 /* GroundMachines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroundMachines;
+			sourceTree = "<group>";
+		};
+		CAF6F881253B6E3500BFB507 /* AirMachines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AirMachines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */,
+				CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */,
 				CAF6F870253B6B5400BFB507 /* main.swift in Sources */,
+				CAF6F87E253B6BB700BFB507 /* AirRaceMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
