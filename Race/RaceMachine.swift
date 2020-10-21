@@ -8,9 +8,17 @@
 import Foundation
 class RaceMachine{
     var velocity: Double
-    private var type: Machines?
-    init(type: Machines){
+    var type: Machines?
+    var ownUID = 0
+    var name = ""
+    private static var globalUIDCounter = -1
+    private func setUpUID(){
+        RaceMachine.globalUIDCounter += 1
+        ownUID = RaceMachine.globalUIDCounter
+    }
+    init(type: Machines, name: String){
         self.type = type
+        self.name = name
         switch type {
         case .twinkyCamel:
             velocity = Velocitys.twinkyCamel
@@ -34,5 +42,6 @@ class RaceMachine{
             velocity = Velocitys.broom
             break
         }
+        setUpUID()
     }
 }

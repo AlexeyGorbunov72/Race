@@ -6,13 +6,51 @@
 //
 
 import Foundation
-class GroundRaceMachine: RaceMachine, Raceble{
-    private var counterRest = 0
-    func moveTo(distance: Double) -> Double {
-        return 10.0
+class GroundRaceMachine: RaceMachine{
+    private var counterRest = -1
+    private var stamina = 0.0
+    override init(type: Machines, name: String) {
+        super.init(type: type, name: name)
+        switch type {
+        case .twinkyCamel:
+            stamina = Stamina.twinkyCamel
+            break
+        case .speedyCamel:
+            stamina = Stamina.speedyCamel
+            break
+        case .speedyBoots:
+            stamina = Stamina.speedyBoots
+            break
+        case .centaur:
+            stamina = Stamina.centaur
+            break
+        default:
+            break // error
+        }
+    }
+    private func rest() -> Double{
+        counterRest += 1
+        return RestDuration.getRestDuration(for: self.type!, iteration: counterRest)
+    }
+}
+
+extension GroundRaceMachine: Raceble{
+    func getUIDAndName() -> (uid: Int, name: String) {
+        return (uid: self.ownUID, name: self.name)
     }
     
-    override init(type: Machines) {
-        super.init(type: type)
+    func prepareToRace() {
+        counterRest = -1
+    }
+    func moveTo(distance: Double) -> Double {
+        var time = 0.0
+        var doneDistance = 0.0
+        while doneDistance + velocity * stamina < distance {
+            doneDistance += stamina * velocity
+            time += rest()
+            time += stamina
+        }
+        time += (distance - doneDistance) / velocity
+        return time
     }
 }

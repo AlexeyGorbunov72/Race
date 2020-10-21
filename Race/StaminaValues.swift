@@ -7,37 +7,9 @@
 
 import Foundation
 
-struct RestDuration{
-    static let twinkyCamel: [Double] = [5, 8]
-    static let speedyCamel: [Double] = [5, 6.5, 8]
-    static let centaur: [Double]     = [2]
-    static let speedyBoots: [Double] = [10, 5]
-    func getRestDuration(for machine: Machines, iteration: Int) -> Double{
-        var restlist: [Double] = []
-        switch machine {
-        case .twinkyCamel:
-            restlist = RestDuration.twinkyCamel
-            break
-        case .speedyCamel:
-            restlist = RestDuration.speedyCamel
-            break
-        case .speedyBoots:
-            restlist = RestDuration.speedyBoots
-            break
-        case .centaur:
-            restlist = RestDuration.centaur
-            break
-        default:
-            break // Error!
-        }
-        if iteration >= restlist.count - 1{
-            guard let restDuration = restlist.last else {
-                return -1 // delete this
-                // throw error
-            }
-            return restDuration
-        } else {
-            return restlist[iteration]
-        }
-    }
+struct Stamina{
+    static let twinkyCamel  = 30.0
+    static let speedyCamel  = 10.0
+    static let centaur      = 8.0
+    static let speedyBoots  = 60.0
 }

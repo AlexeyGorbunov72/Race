@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CAB027B62540583E007E5B72 /* GroundMachinesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027B52540583E007E5B72 /* GroundMachinesEnum.swift */; };
-		CAB027B925405A4C007E5B72 /* StaminaValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027B825405A4C007E5B72 /* StaminaValues.swift */; };
+		CAB027B925405A4C007E5B72 /* RestDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027B825405A4C007E5B72 /* RestDuration.swift */; };
+		CAB027BD25406635007E5B72 /* StaminaValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027BC25406635007E5B72 /* StaminaValues.swift */; };
+		CAB027C4254070E8007E5B72 /* DistanceReducerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027C3254070E8007E5B72 /* DistanceReducerFunctions.swift */; };
+		CAB027C725408A68007E5B72 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027C625408A68007E5B72 /* Race.swift */; };
 		CAF6F870253B6B5400BFB507 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F86F253B6B5400BFB507 /* main.swift */; };
 		CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F877253B6B7600BFB507 /* RaceMachine.swift */; };
 		CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */; };
@@ -32,7 +35,10 @@
 
 /* Begin PBXFileReference section */
 		CAB027B52540583E007E5B72 /* GroundMachinesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundMachinesEnum.swift; sourceTree = "<group>"; };
-		CAB027B825405A4C007E5B72 /* StaminaValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaminaValues.swift; sourceTree = "<group>"; };
+		CAB027B825405A4C007E5B72 /* RestDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDuration.swift; sourceTree = "<group>"; };
+		CAB027BC25406635007E5B72 /* StaminaValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaminaValues.swift; sourceTree = "<group>"; };
+		CAB027C3254070E8007E5B72 /* DistanceReducerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceReducerFunctions.swift; sourceTree = "<group>"; };
+		CAB027C625408A68007E5B72 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		CAF6F86C253B6B5400BFB507 /* Race */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Race; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF6F86F253B6B5400BFB507 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CAF6F877253B6B7600BFB507 /* RaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMachine.swift; sourceTree = "<group>"; };
@@ -82,7 +88,10 @@
 				CAF6F882253B732500BFB507 /* Raceble.swift */,
 				CAF6F889253B747300BFB507 /* VelocityEnum.swift */,
 				CAB027B52540583E007E5B72 /* GroundMachinesEnum.swift */,
-				CAB027B825405A4C007E5B72 /* StaminaValues.swift */,
+				CAB027B825405A4C007E5B72 /* RestDuration.swift */,
+				CAB027BC25406635007E5B72 /* StaminaValues.swift */,
+				CAB027C3254070E8007E5B72 /* DistanceReducerFunctions.swift */,
+				CAB027C625408A68007E5B72 /* Race.swift */,
 			);
 			path = Race;
 			sourceTree = "<group>";
@@ -160,14 +169,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */,
+				CAB027C4254070E8007E5B72 /* DistanceReducerFunctions.swift in Sources */,
 				CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */,
 				CAF6F883253B732500BFB507 /* Raceble.swift in Sources */,
-				CAB027B925405A4C007E5B72 /* StaminaValues.swift in Sources */,
+				CAB027C725408A68007E5B72 /* Race.swift in Sources */,
+				CAB027B925405A4C007E5B72 /* RestDuration.swift in Sources */,
 				CAF6F88A253B747300BFB507 /* VelocityEnum.swift in Sources */,
 				CAF6F870253B6B5400BFB507 /* main.swift in Sources */,
 				CAF6F87E253B6BB700BFB507 /* AirRaceMachine.swift in Sources */,
 				CAF6F897253B7AC700BFB507 /* GroundMachine.swift in Sources */,
 				CAB027B62540583E007E5B72 /* GroundMachinesEnum.swift in Sources */,
+				CAB027BD25406635007E5B72 /* StaminaValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
