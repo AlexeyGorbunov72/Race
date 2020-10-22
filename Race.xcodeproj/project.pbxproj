@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CAB027B62540583E007E5B72 /* GroundMachinesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027B52540583E007E5B72 /* GroundMachinesEnum.swift */; };
-		CAB027B925405A4C007E5B72 /* RestDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027B825405A4C007E5B72 /* RestDuration.swift */; };
-		CAB027BD25406635007E5B72 /* StaminaValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027BC25406635007E5B72 /* StaminaValues.swift */; };
-		CAB027C4254070E8007E5B72 /* DistanceReducerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027C3254070E8007E5B72 /* DistanceReducerFunctions.swift */; };
+		CAB027B62540583E007E5B72 /* Machines.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027B52540583E007E5B72 /* Machines.swift */; };
 		CAB027C725408A68007E5B72 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027C625408A68007E5B72 /* Race.swift */; };
+		CAB027CF2540D3E0007E5B72 /* TypesOfRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027CE2540D3E0007E5B72 /* TypesOfRace.swift */; };
+		CAB027D22540D4DA007E5B72 /* RaceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB027D12540D4DA007E5B72 /* RaceErrors.swift */; };
+		CAB0282B254206CE007E5B72 /* TwinkyCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0282A254206CE007E5B72 /* TwinkyCamel.swift */; };
+		CAB0282E254206FD007E5B72 /* SpeedyCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0282D254206FD007E5B72 /* SpeedyCamel.swift */; };
+		CAB028312542071C007E5B72 /* Centaur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB028302542071C007E5B72 /* Centaur.swift */; };
+		CAB028342542072F007E5B72 /* SpeedyBoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB028332542072F007E5B72 /* SpeedyBoots.swift */; };
+		CAB0283725420756007E5B72 /* FlyCarpet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0283625420756007E5B72 /* FlyCarpet.swift */; };
+		CAB0283A25420766007E5B72 /* Mortar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0283925420766007E5B72 /* Mortar.swift */; };
+		CAB0283D25420784007E5B72 /* Broom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0283C25420784007E5B72 /* Broom.swift */; };
+		CAB0284025421319007E5B72 /* RaceMachinesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0283F25421319007E5B72 /* RaceMachinesBuilder.swift */; };
 		CAF6F870253B6B5400BFB507 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F86F253B6B5400BFB507 /* main.swift */; };
 		CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F877253B6B7600BFB507 /* RaceMachine.swift */; };
 		CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */; };
 		CAF6F87E253B6BB700BFB507 /* AirRaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */; };
 		CAF6F883253B732500BFB507 /* Raceble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F882253B732500BFB507 /* Raceble.swift */; };
-		CAF6F88A253B747300BFB507 /* VelocityEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F889253B747300BFB507 /* VelocityEnum.swift */; };
-		CAF6F897253B7AC700BFB507 /* GroundMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F896253B7AC700BFB507 /* GroundMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,19 +39,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CAB027B52540583E007E5B72 /* GroundMachinesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundMachinesEnum.swift; sourceTree = "<group>"; };
-		CAB027B825405A4C007E5B72 /* RestDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDuration.swift; sourceTree = "<group>"; };
-		CAB027BC25406635007E5B72 /* StaminaValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaminaValues.swift; sourceTree = "<group>"; };
-		CAB027C3254070E8007E5B72 /* DistanceReducerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceReducerFunctions.swift; sourceTree = "<group>"; };
+		CAB027B52540583E007E5B72 /* Machines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machines.swift; sourceTree = "<group>"; };
 		CAB027C625408A68007E5B72 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		CAB027CE2540D3E0007E5B72 /* TypesOfRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesOfRace.swift; sourceTree = "<group>"; };
+		CAB027D12540D4DA007E5B72 /* RaceErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceErrors.swift; sourceTree = "<group>"; };
+		CAB0282A254206CE007E5B72 /* TwinkyCamel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinkyCamel.swift; sourceTree = "<group>"; };
+		CAB0282D254206FD007E5B72 /* SpeedyCamel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyCamel.swift; sourceTree = "<group>"; };
+		CAB028302542071C007E5B72 /* Centaur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centaur.swift; sourceTree = "<group>"; };
+		CAB028332542072F007E5B72 /* SpeedyBoots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedyBoots.swift; sourceTree = "<group>"; };
+		CAB0283625420756007E5B72 /* FlyCarpet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyCarpet.swift; sourceTree = "<group>"; };
+		CAB0283925420766007E5B72 /* Mortar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mortar.swift; sourceTree = "<group>"; };
+		CAB0283C25420784007E5B72 /* Broom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broom.swift; sourceTree = "<group>"; };
+		CAB0283F25421319007E5B72 /* RaceMachinesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMachinesBuilder.swift; sourceTree = "<group>"; };
 		CAF6F86C253B6B5400BFB507 /* Race */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Race; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF6F86F253B6B5400BFB507 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CAF6F877253B6B7600BFB507 /* RaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMachine.swift; sourceTree = "<group>"; };
 		CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundRaceMachine.swift; sourceTree = "<group>"; };
 		CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirRaceMachine.swift; sourceTree = "<group>"; };
 		CAF6F882253B732500BFB507 /* Raceble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raceble.swift; sourceTree = "<group>"; };
-		CAF6F889253B747300BFB507 /* VelocityEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelocityEnum.swift; sourceTree = "<group>"; };
-		CAF6F896253B7AC700BFB507 /* GroundMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 		CAF6F863253B6B5400BFB507 = {
 			isa = PBXGroup;
 			children = (
+				CAF6F86F253B6B5400BFB507 /* main.swift */,
 				CAF6F86E253B6B5400BFB507 /* Race */,
 				CAF6F86D253B6B5400BFB507 /* Products */,
 			);
@@ -79,19 +90,15 @@
 		CAF6F86E253B6B5400BFB507 /* Race */ = {
 			isa = PBXGroup;
 			children = (
+				CAB027C625408A68007E5B72 /* Race.swift */,
+				CAF6F877253B6B7600BFB507 /* RaceMachine.swift */,
+				CAF6F882253B732500BFB507 /* Raceble.swift */,
+				CAB027B52540583E007E5B72 /* Machines.swift */,
+				CAB027CE2540D3E0007E5B72 /* TypesOfRace.swift */,
+				CAB027D12540D4DA007E5B72 /* RaceErrors.swift */,
+				CAB0283F25421319007E5B72 /* RaceMachinesBuilder.swift */,
 				CAF6F881253B6E3500BFB507 /* AirMachines */,
 				CAF6F880253B6E2300BFB507 /* GroundMachines */,
-				CAF6F86F253B6B5400BFB507 /* main.swift */,
-				CAF6F877253B6B7600BFB507 /* RaceMachine.swift */,
-				CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */,
-				CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */,
-				CAF6F882253B732500BFB507 /* Raceble.swift */,
-				CAF6F889253B747300BFB507 /* VelocityEnum.swift */,
-				CAB027B52540583E007E5B72 /* GroundMachinesEnum.swift */,
-				CAB027B825405A4C007E5B72 /* RestDuration.swift */,
-				CAB027BC25406635007E5B72 /* StaminaValues.swift */,
-				CAB027C3254070E8007E5B72 /* DistanceReducerFunctions.swift */,
-				CAB027C625408A68007E5B72 /* Race.swift */,
 			);
 			path = Race;
 			sourceTree = "<group>";
@@ -99,7 +106,11 @@
 		CAF6F880253B6E2300BFB507 /* GroundMachines */ = {
 			isa = PBXGroup;
 			children = (
-				CAF6F896253B7AC700BFB507 /* GroundMachine.swift */,
+				CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */,
+				CAB0282A254206CE007E5B72 /* TwinkyCamel.swift */,
+				CAB0282D254206FD007E5B72 /* SpeedyCamel.swift */,
+				CAB028302542071C007E5B72 /* Centaur.swift */,
+				CAB028332542072F007E5B72 /* SpeedyBoots.swift */,
 			);
 			path = GroundMachines;
 			sourceTree = "<group>";
@@ -107,6 +118,10 @@
 		CAF6F881253B6E3500BFB507 /* AirMachines */ = {
 			isa = PBXGroup;
 			children = (
+				CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */,
+				CAB0283625420756007E5B72 /* FlyCarpet.swift */,
+				CAB0283925420766007E5B72 /* Mortar.swift */,
+				CAB0283C25420784007E5B72 /* Broom.swift */,
 			);
 			path = AirMachines;
 			sourceTree = "<group>";
@@ -169,17 +184,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */,
-				CAB027C4254070E8007E5B72 /* DistanceReducerFunctions.swift in Sources */,
 				CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */,
+				CAB028342542072F007E5B72 /* SpeedyBoots.swift in Sources */,
 				CAF6F883253B732500BFB507 /* Raceble.swift in Sources */,
+				CAB027CF2540D3E0007E5B72 /* TypesOfRace.swift in Sources */,
+				CAB0283A25420766007E5B72 /* Mortar.swift in Sources */,
 				CAB027C725408A68007E5B72 /* Race.swift in Sources */,
-				CAB027B925405A4C007E5B72 /* RestDuration.swift in Sources */,
-				CAF6F88A253B747300BFB507 /* VelocityEnum.swift in Sources */,
+				CAB0283D25420784007E5B72 /* Broom.swift in Sources */,
 				CAF6F870253B6B5400BFB507 /* main.swift in Sources */,
+				CAB027D22540D4DA007E5B72 /* RaceErrors.swift in Sources */,
+				CAB028312542071C007E5B72 /* Centaur.swift in Sources */,
+				CAB0283725420756007E5B72 /* FlyCarpet.swift in Sources */,
+				CAB0282E254206FD007E5B72 /* SpeedyCamel.swift in Sources */,
+				CAB0282B254206CE007E5B72 /* TwinkyCamel.swift in Sources */,
 				CAF6F87E253B6BB700BFB507 /* AirRaceMachine.swift in Sources */,
-				CAF6F897253B7AC700BFB507 /* GroundMachine.swift in Sources */,
-				CAB027B62540583E007E5B72 /* GroundMachinesEnum.swift in Sources */,
-				CAB027BD25406635007E5B72 /* StaminaValues.swift in Sources */,
+				CAB0284025421319007E5B72 /* RaceMachinesBuilder.swift in Sources */,
+				CAB027B62540583E007E5B72 /* Machines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

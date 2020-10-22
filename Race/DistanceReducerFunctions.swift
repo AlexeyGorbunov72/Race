@@ -26,4 +26,22 @@ struct DistanceReducers{
         let n = (distance / 1000).rounded(.down)
         return (distance - n * (n - 1) / 2) / distance
     }
+    static func getReducer(type: Machines) -> ((Double) -> Double){
+        var distanceReducerFunction: ((Double) -> Double)?
+        switch type {
+        case .flyCarpet:
+            distanceReducerFunction = DistanceReducers.flyCarpetReducer
+            break
+        case .mortar:
+            distanceReducerFunction = DistanceReducers.mortarReducer
+            break
+        case .broom:
+            distanceReducerFunction = DistanceReducers.broomReducer
+            break
+       
+        default:
+            break // error
+        }
+        return distanceReducerFunction!
+    }
 }

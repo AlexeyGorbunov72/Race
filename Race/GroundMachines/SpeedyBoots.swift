@@ -1,15 +1,14 @@
 //
-//  Centaur.swift
+//  SpeedyBoots.swift
 //  Race
 //
 //  Created by Alexey on 22.10.2020.
 //
 
 import Foundation
-
-class Centaur: GroundRaceMachine{
+class SpeedyBoots: GroundRaceMachine{
     init(name: String) {
-        super.init(velocity: 15, name: name, restList: [2], stamina: 8.0)
+        super.init(velocity: 6, name: name, restList: [10, 5], stamina: 60.0)
     }
     
     required init(velocity: Double, name: String, restList: [Double], stamina: Double) {
@@ -17,7 +16,7 @@ class Centaur: GroundRaceMachine{
     }
     
 }
-extension Centaur: Raceble{
+extension SpeedyBoots: Raceble{
     
     
     func getUIDAndName() -> (uid: Int, name: String) {
