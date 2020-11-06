@@ -6,11 +6,12 @@
 //
 
 import Foundation
+
 func showBasicFunctional(){
-    let p = RaceMachinesBuilder.build(type: .speedyBoots, .speedyCamel, .centaur, .flyCarpet, .broom)
+    let participants = RaceMachinesBuilder.build(type: .speedyBoots, .speedyCamel, .centaur, .flyCarpet, .broom)
     let race = Race(type: .free)
     do{
-        try race.appendParticipants(raceMachine: p)
+        try race.appendParticipants(raceMachine: participants)
         print(try race.startRace(distance: 1000))
     } catch RaceErrors.invalidParticipant {
         print("showBasicFunctional::Error ", RaceErrors.invalidParticipant)
@@ -47,6 +48,7 @@ func showFeature(){
     }
    
 }
+
 
 func findChampion(distance: Double, participants: [Raceble], data: [(time: Double, participant: Raceble)] = []) -> [(time: Double, participant: Raceble)]{
     
@@ -94,3 +96,6 @@ func showChampionate(){
 }
 
 showChampionate()
+showBasicFunctional()
+showFeature()
+

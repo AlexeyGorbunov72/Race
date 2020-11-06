@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Machine{
+class Machine: Raceble{
     var velocity: Double
     var ownUID = 0
     var name = ""

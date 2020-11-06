@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Centaur: GroundMachine, Raceble{
+class Centaur: GroundMachine{
     init(name: String) {
         super.init(velocity: 15, name: name, restList: [2], stamina: 8.0)
     }

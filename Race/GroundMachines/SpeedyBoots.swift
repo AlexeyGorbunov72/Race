@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class SpeedyBoots: GroundMachine, Raceble{
+class SpeedyBoots: GroundMachine{
     init(name: String) {
         super.init(velocity: 6, name: name, restList: [10, 5], stamina: 60.0)
     }

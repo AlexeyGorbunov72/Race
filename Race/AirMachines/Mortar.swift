@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Mortar: AirMachine, Raceble{
+class Mortar: AirMachine{
     override func distanceReducerFunction(distance: Double) -> Double {
         return 1 - 0.06
     }

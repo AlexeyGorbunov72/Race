@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class FlyCarpet: AirMachine, Raceble{
+class FlyCarpet: AirMachine{
     override func distanceReducerFunction(distance: Double) -> Double {
         if distance < 1_000{
             return 1 - 0.0
