@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class GroundRaceMachine: RaceMachine{
+class GroundMachine: Machine{
     var counterRest = -1
     var stamina = 0.0
     private var restList: [Double]

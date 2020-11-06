@@ -6,14 +6,14 @@
 //
 
 import Foundation
-class RaceMachine{
+class Machine{
     var velocity: Double
     var ownUID = 0
     var name = ""
     private static var globalUIDCounter = -1
     private func setUpUID(){
-        RaceMachine.globalUIDCounter += 1
-        ownUID = RaceMachine.globalUIDCounter
+        Machine.globalUIDCounter += 1
+        ownUID = Machine.globalUIDCounter
     }
     init(velocity: Double, name: String){
         self.name = name

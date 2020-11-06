@@ -35,7 +35,7 @@ func showFeature(){
     do{
         var winners = try race.startRace(distance: 1000)
         print(winners)
-        while (winners[0].participant as? AirRaceMachine) == nil {
+        while (winners[0].participant as? AirMachine) == nil {
             winners = try race.startRace(distance: 1000)
         }
         print(winners)
@@ -62,7 +62,7 @@ func findChampion(distance: Double, participants: [Raceble], data: [(time: Doubl
         
             winners.forEach {
                 print("\t Won: \($0.participant.getUIDAndName().name), time: \($0.time)")
-                $0.participant.prepareToRace()
+                //$0.participant.prepareToRace()
                 goToNext.append($0.participant)
                 data_.append($0)
             }

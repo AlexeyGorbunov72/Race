@@ -20,9 +20,9 @@
 		CAB0283D25420784007E5B72 /* Broom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0283C25420784007E5B72 /* Broom.swift */; };
 		CAB0284025421319007E5B72 /* RaceMachinesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0283F25421319007E5B72 /* RaceMachinesBuilder.swift */; };
 		CAF6F870253B6B5400BFB507 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F86F253B6B5400BFB507 /* main.swift */; };
-		CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F877253B6B7600BFB507 /* RaceMachine.swift */; };
+		CAF6F878253B6B7600BFB507 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F877253B6B7600BFB507 /* Machine.swift */; };
 		CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */; };
-		CAF6F87E253B6BB700BFB507 /* AirRaceMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */; };
+		CAF6F87E253B6BB700BFB507 /* AirMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F87D253B6BB700BFB507 /* AirMachine.swift */; };
 		CAF6F883253B732500BFB507 /* Raceble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6F882253B732500BFB507 /* Raceble.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +53,9 @@
 		CAB0283F25421319007E5B72 /* RaceMachinesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMachinesBuilder.swift; sourceTree = "<group>"; };
 		CAF6F86C253B6B5400BFB507 /* Race */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Race; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF6F86F253B6B5400BFB507 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		CAF6F877253B6B7600BFB507 /* RaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMachine.swift; sourceTree = "<group>"; };
+		CAF6F877253B6B7600BFB507 /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		CAF6F87A253B6B9700BFB507 /* GroundRaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundRaceMachine.swift; sourceTree = "<group>"; };
-		CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirRaceMachine.swift; sourceTree = "<group>"; };
+		CAF6F87D253B6BB700BFB507 /* AirMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirMachine.swift; sourceTree = "<group>"; };
 		CAF6F882253B732500BFB507 /* Raceble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raceble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB027C625408A68007E5B72 /* Race.swift */,
-				CAF6F877253B6B7600BFB507 /* RaceMachine.swift */,
+				CAF6F877253B6B7600BFB507 /* Machine.swift */,
 				CAF6F882253B732500BFB507 /* Raceble.swift */,
 				CAB027B52540583E007E5B72 /* Machines.swift */,
 				CAB027CE2540D3E0007E5B72 /* TypesOfRace.swift */,
@@ -118,7 +118,7 @@
 		CAF6F881253B6E3500BFB507 /* AirMachines */ = {
 			isa = PBXGroup;
 			children = (
-				CAF6F87D253B6BB700BFB507 /* AirRaceMachine.swift */,
+				CAF6F87D253B6BB700BFB507 /* AirMachine.swift */,
 				CAB0283625420756007E5B72 /* FlyCarpet.swift */,
 				CAB0283925420766007E5B72 /* Mortar.swift */,
 				CAB0283C25420784007E5B72 /* Broom.swift */,
@@ -183,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF6F878253B6B7600BFB507 /* RaceMachine.swift in Sources */,
+				CAF6F878253B6B7600BFB507 /* Machine.swift in Sources */,
 				CAF6F87B253B6B9700BFB507 /* GroundRaceMachine.swift in Sources */,
 				CAB028342542072F007E5B72 /* SpeedyBoots.swift in Sources */,
 				CAF6F883253B732500BFB507 /* Raceble.swift in Sources */,
@@ -197,7 +197,7 @@
 				CAB0283725420756007E5B72 /* FlyCarpet.swift in Sources */,
 				CAB0282E254206FD007E5B72 /* SpeedyCamel.swift in Sources */,
 				CAB0282B254206CE007E5B72 /* TwinkyCamel.swift in Sources */,
-				CAF6F87E253B6BB700BFB507 /* AirRaceMachine.swift in Sources */,
+				CAF6F87E253B6BB700BFB507 /* AirMachine.swift in Sources */,
 				CAB0284025421319007E5B72 /* RaceMachinesBuilder.swift in Sources */,
 				CAB027B62540583E007E5B72 /* Machines.swift in Sources */,
 			);

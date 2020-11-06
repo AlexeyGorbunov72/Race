@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class AirRaceMachine: RaceMachine{
+class AirMachine: Machine{
     var doneDistance = -1.0
     func distanceReducerFunction(distance: Double) -> Double{
         fatalError("distanceReducerFunction::Must Override")
@@ -31,6 +31,3 @@ class AirRaceMachine: RaceMachine{
     }
 }
 
-protocol ToBeRaceMachine{
-    func distanceReducerFunction(distance: Double) -> Double
-}

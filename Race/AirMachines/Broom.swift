@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Broom: AirRaceMachine, Raceble{
+class Broom: AirMachine, Raceble{
     override func distanceReducerFunction(distance: Double) -> Double {
         let n = (distance / 1000).rounded(.down)
         return (distance - n * (n - 1) / 2) / distance

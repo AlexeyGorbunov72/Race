@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class SpeedyCamel: GroundRaceMachine, Raceble{
+class SpeedyCamel: GroundMachine, Raceble{
     init(name: String) {
         super.init(velocity: 40, name: name, restList: [5, 6.5, 8], stamina: 10.0)
     }

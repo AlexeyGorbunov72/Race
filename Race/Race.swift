@@ -56,12 +56,12 @@ class Race{
     private func validate(participant: Raceble) throws {
         switch type {
         case .groundOnly:
-            if (participant as? AirRaceMachine) != nil{
+            if (participant as? AirMachine) != nil{
                 throw RaceErrors.invalidParticipant
             }
             break
         case .airOnly:
-            if (participant as? GroundRaceMachine) != nil{
+            if (participant as? GroundMachine) != nil{
                 throw RaceErrors.invalidParticipant
             }
         case .free:
