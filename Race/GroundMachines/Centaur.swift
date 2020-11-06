@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Centaur: GroundRaceMachine{
+class Centaur: GroundRaceMachine, Raceble{
     init(name: String) {
         super.init(velocity: 15, name: name, restList: [2], stamina: 8.0)
     }
@@ -17,29 +17,5 @@ class Centaur: GroundRaceMachine{
     }
     
 }
-extension Centaur: Raceble{
-    
-    
-    func getUIDAndName() -> (uid: Int, name: String) {
-        return (uid: self.ownUID, name: self.name)
-    }
-    
-    func prepareToRace() {
-        counterRest = -1
-    }
-    func moveTo(distance: Double) throws -> Double {
-        if distance < 0 {
-            throw RaceErrors.neganiveDistance
-        }
-        var time = 0.0
-        var doneDistance = 0.0
-        while doneDistance + velocity * stamina < distance {
-            doneDistance += stamina * velocity
-            time += rest()
-            time += stamina
-        }
-        time += (distance - doneDistance) / velocity
-        return time
-    }
-}
+
 

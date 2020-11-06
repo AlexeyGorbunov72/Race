@@ -62,7 +62,7 @@ func findChampion(distance: Double, participants: [Raceble], data: [(time: Doubl
         
             winners.forEach {
                 print("\t Won: \($0.participant.getUIDAndName().name), time: \($0.time)")
-                //$0.participant.prepareToRace()
+                $0.participant.prepareToRace()
                 goToNext.append($0.participant)
                 data_.append($0)
             }
@@ -76,7 +76,7 @@ func findChampion(distance: Double, participants: [Raceble], data: [(time: Doubl
     
     if goToNext.count < 2{
         print("\n#End Of Races!#\n")
-        return data
+        return data_
     }
     print("\n#NEXT SECTION!#")
     return findChampion(distance: distance, participants: goToNext, data: data_)

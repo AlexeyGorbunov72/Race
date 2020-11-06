@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class TwinkyCamel: GroundRaceMachine{
+class TwinkyCamel: GroundRaceMachine, Raceble {
     init(name: String) {
         super.init(velocity: 10, name: name, restList: [5, 8], stamina: 30.0)
     }
@@ -16,28 +16,4 @@ class TwinkyCamel: GroundRaceMachine{
     }
     
 }
-extension TwinkyCamel: Raceble{
-    
-    
-    func getUIDAndName() -> (uid: Int, name: String) {
-        return (uid: self.ownUID, name: self.name)
-    }
-    
-    func prepareToRace() {
-        counterRest = -1
-    }
-    func moveTo(distance: Double) throws -> Double {
-        if distance < 0 {
-            throw RaceErrors.neganiveDistance
-        }
-        var time = 0.0
-        var doneDistance = 0.0
-        while doneDistance + velocity * stamina < distance {
-            doneDistance += stamina * velocity
-            time += rest()
-            time += stamina
-        }
-        time += (distance - doneDistance) / velocity
-        return time
-    }
-}
+

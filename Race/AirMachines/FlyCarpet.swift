@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class FlyCarpet: AirRaceMachine{
+class FlyCarpet: AirRaceMachine, Raceble{
     override func distanceReducerFunction(distance: Double) -> Double {
         if distance < 1_000{
             return 1 - 0.0
@@ -23,25 +23,3 @@ class FlyCarpet: AirRaceMachine{
     }
 }
 
-extension FlyCarpet: Raceble{
-    func getUIDAndName() -> (uid: Int, name: String) {
-        return (uid: self.ownUID, name: self.name)
-    }
-    
-    func moveTo(distance: Double) throws -> Double {
-        if distance < 0{
-            throw RaceErrors.neganiveDistance
-        }
-        if doneDistance < 0 {
-            doneDistance += distance
-            return (distance * distanceReducerFunction(distance: distance)) / velocity
-        }
-        doneDistance += distance
-        return (distance * distanceReducerFunction(distance: doneDistance)) / velocity
-        
-    }
-    
-    func prepareToRace() {
-        doneDistance = -1
-    }
-}

@@ -27,7 +27,23 @@ class GroundRaceMachine: RaceMachine{
         }
         return restList[iteration]
     }
-    
+    override func prepareToRace(){
+        counterRest = -1
+    }
+    override func moveTo(distance: Double) throws -> Double {
+        if distance < 0 {
+            throw RaceErrors.neganiveDistance
+        }
+        var time = 0.0
+        var doneDistance = 0.0
+        while doneDistance + velocity * stamina < distance {
+            doneDistance += stamina * velocity
+            time += rest()
+            time += stamina
+        }
+        time += (distance - doneDistance) / velocity
+        return time
+    }
     
 }
 

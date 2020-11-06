@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class SpeedyBoots: GroundRaceMachine{
+class SpeedyBoots: GroundRaceMachine, Raceble{
     init(name: String) {
         super.init(velocity: 6, name: name, restList: [10, 5], stamina: 60.0)
     }
@@ -16,29 +16,5 @@ class SpeedyBoots: GroundRaceMachine{
     }
     
 }
-extension SpeedyBoots: Raceble{
-    
-    
-    func getUIDAndName() -> (uid: Int, name: String) {
-        return (uid: self.ownUID, name: self.name)
-    }
-    
-    func prepareToRace() {
-        counterRest = -1
-    }
-    func moveTo(distance: Double) throws -> Double {
-        if distance < 0 {
-            throw RaceErrors.neganiveDistance
-        }
-        var time = 0.0
-        var doneDistance = 0.0
-        while doneDistance + velocity * stamina < distance {
-            doneDistance += stamina * velocity
-            time += rest()
-            time += stamina
-        }
-        time += (distance - doneDistance) / velocity
-        return time
-    }
-}
+
 
